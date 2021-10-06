@@ -1,0 +1,11 @@
+programa de clase {
+    programa(){
+
+       Si(){
+       moverse();
+       pickbeeper ();
+       Gire a la izquierda();
+       apagar();
+       }
+    }
+}

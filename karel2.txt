@@ -1,0 +1,49 @@
+programa de clase {
+    programa(){
+
+         while (notFacingEast) {giro a la izquierda (); }
+         moverse();
+         while (nextToABeeper) {pickbeeper (); }
+         while (notFacingWest) {giro a la izquierda (); }
+         moverse();
+         while (notFacingNorth) {giro a la izquierda ();}
+         moverse();
+         while (rightIsBlocked) {mover (); }
+         while (notFacingEast) {giro a la izquierda (); }
+         moverse();
+         while (notFacingSouth) {giro a la izquierda (); }
+         while (frontIsClear) {mover (); }
+         while (notFacingEast) {giro a la izquierda (); }
+         while (frontIsClear && rightIsBlocked) {sembrar (); }
+         if (rightIsBlocked) {
+             sembrar ();
+             while (notFacingNorth) {giro a la izquierda (); }
+             while (rightIsBlocked) {mover (); }
+             while (notFacingEast) {giro a la izquierda (); }
+             moverse();
+         }
+         while (notFacingSouth) {giro a la izquierda (); }
+         while (frontIsClear) {mover (); }
+         while (notFacingWest) {giro a la izquierda (); }
+         while (frontIsClear) {mover (); }
+         while (notFacingEast) {giro a la izquierda (); }
+         moverse();
+         while (anyBeepersInBeeperBag) {putbeeper (); }
+         apagar();
+
+    }
+    void sembrar () {
+        while (notFacingNorth) {giro a la izquierda (); }
+        while (frontIsClear || notNextToABeeper) {
+            if (notNextToABeeper) {putbeeper (); }
+            if (frontIsClear) {mover (); }
+        }
+        while (notFacingSouth) {giro a la izquierda (); }
+        while (frontIsClear || notNextToABeeper) {
+            if (notNextToABeeper) {putbeeper ();}
+            if (frontIsClear) {mover (); }
+        }
+        while (notFacingEast) {giro a la izquierda (); }
+        if (frontIsClear) {mover (); }
+    }
+}

@@ -1,0 +1,30 @@
+programa de clase {
+    programa(){
+
+        while (rightIsClear) {
+                     buscar ();
+        }
+        buscar ();
+        while (notFacingWest) {giro a la izquierda (); }
+        while (frontIsClear) {mover (); }
+        while (anyBeepersInBeeperBag) {putbeeper (); }
+         apagar();
+
+    }
+    void buscar () {
+        while (frontIsClear || nextToABeeper) {
+           while (nextToABeeper) {
+                pickbeeper ();
+           }
+               if (frontIsClear) {
+               moverse();
+           }
+        }
+        while (notFacingSouth) {giro a la izquierda (); }
+        while (frontIsClear) {mover (); }
+        while (notFacingEast) {giro a la izquierda (); }
+        if (frontIsClear) {mover (); }
+        while (notFacingNorth) {giro a la izquierda (); }
+
+    }
+}
